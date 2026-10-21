@@ -1,0 +1,41 @@
+<!-- title: Contact Us -->
+<!-- description: Contact the Board office about applications, exams, renewal, verification or complaints. -->
+<section class="page-header">
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">Home</a> / Contact</div>
+    <h1>Contact Us</h1>
+    <p>Our office replies within 3 business days.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="align-items:start">
+      <form class="card" data-demo data-success="Thank you. Your message has been sent.">
+        <h2 class="mt-0" style="font-size:1.4rem">Send a message</h2>
+        <div class="form-grid cols-2">
+          <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="f-topic">Topic</label>
+            <select id="f-topic" name="topic">
+              <option>Application</option><option>Exam</option><option>Renewal / CE</option><option>Verification</option><option>CE provider approval</option><option>Media</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="6" required></textarea></div>
+        <p class="form-note">To file a complaint about a professional, please use the <a href="ethics.html#complaint">complaint form</a>.</p>
+        <button class="btn btn-primary" type="submit">Send</button>
+        <p class="form-status" role="status"></p>
+      </form>
+      <div class="card">
+        <h2 class="mt-0" style="font-size:1.4rem">Board office</h2>
+        <p><span class="placeholder-note">[Street address, city, postal code]</span></p>
+        <p><strong>Phone:</strong> <a class="ltr" href="tel:+97230000000">+972-3-000-0000</a><br>
+           <strong>Email:</strong> <a href="mailto:info@example.org.il">info@example.org.il</a></p>
+        <p><strong>Office hours:</strong> Sunday–Thursday, 9:00–15:00</p>
+        <p class="muted">Service is available in Hebrew, Arabic, English and Russian.</p>
+      </div>
+    </div>
+  </div>
+</section>

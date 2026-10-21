@@ -1,0 +1,40 @@
+<!-- title: אימות בעל הסמכה -->
+<!-- description: חיפוש במרשם הציבורי כדי לוודא שאיש מקצוע בתחום ההתמכרויות מחזיק בהסמכה בתוקף מטעם המועצה. -->
+<section class="page-header">
+  <div class="container">
+    <div class="breadcrumbs"><a href="index.html">דף הבית</a> / אימות בעל הסמכה</div>
+    <h1>אימות בעל הסמכה</h1>
+    <p>המרשם הציבורי הוא המקור הרשמי לבדיקה אם אדם מחזיק בהסמכה בתוקף מטעם המועצה.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card">
+      <form id="registry-form" role="search">
+        <div class="form-grid cols-3">
+          <div class="field" style="grid-column: span 2">
+            <label for="q">שם, מספר הסמכה או עיר</label>
+            <input id="q" name="q" type="search" placeholder="אפשר לחפש בעברית או באנגלית">
+          </div>
+          <div class="field">
+            <label for="credential">הסמכה</label>
+            <select id="credential" name="credential">
+              <option value="">כל ההסמכות</option>
+              <option>CAC I</option><option>CAC II</option><option>MAC</option><option>CCS</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">חיפוש</button>
+      </form>
+      <div id="registry-results" class="registry-results" aria-live="polite"></div>
+    </div>
+    <div class="callout gold"><p><span class="placeholder-note">הדגמה</span> כרגע מוצגות במרשם רשומות לדוגמה בדויות. יש לחבר אותו למאגר ההסמכות של המועצה לפני העלייה לאוויר.</p></div>
+    <div class="grid grid-3" style="margin-top:32px">
+      <div class="card"><h3>מה מוצג במרשם</h3><p>בכל רשומה מופיעים שם בעל ההסמכה, ההסמכה, התמחויות נוספות (אם יש), מספר ההסמכה, עיר העבודה, תאריך התוקף והסטטוס הנוכחי.</p></div>
+      <div class="card"><h3>לא מצאתם?</h3><p>יש מי שהוסמכו תחת שם קודם, ובעלי הסמכה חדשים מופיעים במרשם תוך 5 ימי עסקים. לקבלת אישור רשמי בכתב, <a href="contact.html">צרו איתנו קשר</a>.</p></div>
+      <div class="card"><h3>צעדים משמעתיים פומביים</h3><p>החלטות סופיות על השעיה או שלילה של הסמכה מתפרסמות בהתאם ל<a href="ethics.html#sanctions">מדיניות המשמעת</a> שלנו.</p></div>
+    </div>
+  </div>
+</section>
+<script src="assets/js/registry-data.js"></script>

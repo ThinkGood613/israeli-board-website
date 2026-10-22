@@ -23,7 +23,6 @@
       e.preventDefault();
       var status = form.querySelector(".form-status");
       if (status) status.textContent = form.getAttribute("data-success");
-      form.reset();
     });
   });
 
@@ -39,7 +38,7 @@
     en: {
       credential: "Credential", number: "Certificate no.", city: "City", expires: "Valid until", status: "Status",
       active: "Active", expired: "Expired", inactive: "Inactive",
-      none: "No matching records. Check the spelling or search by certificate number. If you believe this is an error, contact the Board.",
+      none: "No matching records. Check the spelling or search by certificate number. If you believe this is an error, contact ICBAP.",
       count: function (n) { return n + (n === 1 ? " result" : " results"); },
       prompt: "Please enter at least 2 characters."
     }

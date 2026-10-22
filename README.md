@@ -1,4 +1,6 @@
-# Israeli Board for Addiction Certification — website
+# ICBAP website
+
+Website of the Israel Certification Board of Addiction Professionals (ICBAP), Israel's IC&RC member board.
 
 A bilingual (Hebrew RTL / English) static site. Hebrew is served from the site root and English from `/en/`.
 
@@ -26,7 +28,7 @@ GitHub Pages serves the `docs/` folder from the `main` branch. Run `python3 buil
 |---|---|---|
 | `index` | Hero with quick verify, quick-access tiles, credential ladder, stats, steps, news, complaint CTA | IC&RC, NAADAC, ABPM |
 | `about` | Mission, values, scope, governance, committees, board, international alignment | IC&RC, FDAP |
-| `certifications` | Comparison table, CAC I / CAC II / MAC / CCS, trainee status, specialty endorsements, physician pathway, 12 core functions | IC&RC, NAADAC, IGCCB, IITAP, ISAM |
+| `certifications` | The CASAP credential (IC&RC ADC reciprocal): reciprocity, IC&RC minimum requirements, experience by degree, the four ADC domains | IC&RC |
 | `apply` | Process, documents, fees, exam, accommodations, retakes, appeals, portal | IC&RC, ISAM, CCAPP |
 | `renew` | 2-year CE requirements, audit, inactive/retired, reinstatement, CE provider approval | NAADAC, CCAPP, IITAP |
 | `verify` | Public registry search (Hebrew/English) | NAADAC, FDAP |
@@ -38,9 +40,9 @@ GitHub Pages serves the `docs/` folder from the `main` branch. Run `python3 buil
 All placeholders are highlighted in yellow on the pages (search the source for `placeholder-note`). They include:
 
 - Organisation name, registration number, address, phone and email, and board member profiles
-- **Credential hour requirements and fees.** These are drafts modelled on IC&RC, NAADAC and IGCCB norms. The board must approve them.
+- **CASAP requirements** follow IC&RC's published ADC minimums. Add any ICBAP-specific requirements, the full credential name, fees, renewal rules and exam logistics for Israel.
+- **Contact details** are taken from the IC&RC Member Board Directory listing for ICBAP.
 - `static/assets/js/registry-data.js` contains **fictional sample records**. Replace it with real data or an API call.
-- The complaint and contact forms are demo-only (`data-demo`). Point their `action` at a form backend (e.g. Formspree, or your CRM) and remove `data-demo`.
+- The complaint and contact forms are not connected (`data-demo`): they tell the visitor nothing was sent and to email instead. Point their `action` at a form backend (e.g. Formspree) and remove `data-demo`.
 - PDFs to link: Candidate Handbook, full Code of Ethics.
-- Don't claim affiliation with IC&RC, ISAM or other bodies until there are formal agreements.
 - An Arabic version is a natural next step, since exams are offered in Arabic. It would need an `ar` entry in `SITE`, a `pages/ar/` folder, and a three-way language switcher (`build.py` currently assumes two languages).
